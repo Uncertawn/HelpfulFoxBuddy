@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "helpfulfoxbuddy",
+  "version": "${version}",
+  "name": "Helpful Fox Buddy",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "unlicense",
+  "icon": "assets/helpfulfoxbuddy/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "art.uncertawn.helpfulfoxbuddy.client.HelpfulfoxbuddyDataGenerator"
+    ],
+    "main": [
+      "art.uncertawn.helpfulfoxbuddy.Helpfulfoxbuddy"
+    ],
+    "client": [
+      "art.uncertawn.helpfulfoxbuddy.client.HelpfulfoxbuddyClientInitializer"
+    ]
+  },
+  "mixins": [
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
